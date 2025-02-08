@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhiram's Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .hero {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        opacity: 0.9;
+      }
+
+      nav {
+        background-color: #1a2a6c;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 4rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: #1a2a6c;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .education-timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .timeline-item {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        border-left: 4px solid #1a2a6c;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .timeline-item h3 {
+        color: #1a2a6c;
+        margin-bottom: 0.5rem;
+      }
+
+      .timeline-item p {
+        margin-bottom: 0.5rem;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .skill-category {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+      }
+
+      .skill-category h3 {
+        color: #1a2a6c;
+        margin-bottom: 1rem;
+      }
+
+      .interests {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .interest-card {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .interest-card i {
+        font-size: 2rem;
+        color: #1a2a6c;
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        background-color: #1a2a6c;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <h1>Abhiram Iyengar</h1>
+        <p>
+          MS Information Technology Management Student | Business Intelligence &
+          Analytics Professional
+        </p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Personal Interests</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+          "
+        >
+          <div style="width: 100%">
+            <!-- Replace the src attribute with the path to your image file -->
+            <img
+              src="folder_hands_photobooth.jpg"
+              alt="Abhiram"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              "
+            />
+          </div>
+          <div>
+            <p>
+              Abhiram is a dynamic professional and graduate student with a
+              passion for technology, innovation, and exploration. Currently
+              pursuing an MS in Information Technology Management at the
+              University of Texas at Austin, he brings valuable experience from
+              his tenure at Tata Consultancy Services, where he specialized in
+              business intelligence, data analytics, and operational reporting.
+            </p>
+            <p style="margin-top: 1rem">
+              Having lived in various Indian cities, including Cochin,
+              Bangalore, and Mumbai, Abhiram has developed a rich cultural
+              perspective that enhances his ability to work in diverse
+              environments and connect with people from different backgrounds.
+            </p>
+            <p style="margin-top: 1rem">
+              His unique blend of technical expertise, cultural awareness, and a
+              personal growth mindset makes him a valuable asset in any
+              professional setting. He is currently based out of Austin, TX and
+              is willing to relocate to desired office location or work in a
+              remote setting as well.
+            </p>
+            <p style="margin-top: 1rem">
+              Abhiram can be contacted through the following details:<br />
+              📧 Email: ai7384@my.utexas.edu | iyengarabhiram29@gmail.com
+              <br />📞 Cell: +1 (512)-299-4578
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <h3>University of Texas at Austin</h3>
+            <p>MS in Information Technology Management</p>
+            <p>Expected Graduation: May 2025</p>
+          </div>
+          <div class="timeline-item">
+            <h3>
+              University of Mumbai - Fr. Conceicao Rodrigues College of
+              Engineering
+            </h3>
+            <p>Bachelor's in Information Technology</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Kendriya Vidyalaya</h3>
+            <p>Primary and Secondary Education</p>
+            <p>Attended across different cities in India</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline-item">
+          <h3>Tata Consultancy Services</h3>
+          <p>
+            - Led GenAI implementation projects for regulatory bodies in the oil
+            and gas industry
+          </p>
+          <p>
+            - Developed business intelligence products for manufacturing,
+            energy, and resources businesses
+          </p>
+          <p>
+            - Collaborated with cross-functional teams and delivered impactful
+            presentations
+          </p>
+          <p>
+            - Focused on bridging the gap between business and innovation, with
+            emphasis on sustainability
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Key Strengths</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <p>- Business Intelligence</p>
+            <p>- Data Analytics</p>
+            <p>- Operational Reporting</p>
+            <p>- GenAI Implementation</p>
+          </div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <p>- Adaptability in diverse environments</p>
+            <p>- Effective communication</p>
+            <p>- Stakeholder management</p>
+            <p>- Product vision mapping</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests">
+        <h2>Personal Interests</h2>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.8">
+          <p>
+            Outside of his professional life, Abhiram is an avid table tennis
+            player, participating in competitive tournaments. He values the
+            lessons in consistency that the sport has taught him and applies
+            this principle to all areas of his life.
+          </p>
+          <p>
+            Since moving to Austin, he has embraced new hobbies such as running,
+            pickleball, tennis, and cooking, demonstrating his adaptability and
+            eagerness to learn. Abhiram also enjoys reading, with favorites
+            including "The Compound Effect" by Darren Hardy and "Prisoners of
+            Geography" by Tim Marshall.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Abhiram. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
